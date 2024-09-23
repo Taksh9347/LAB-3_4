@@ -1,0 +1,31 @@
+#include <stdio.h>
+int main() {
+    int n, i, num;
+    int max = -2147483648, secondMax = -2147483648;  
+    printf("Enter the number of elements: ");
+    scanf("%d", &n);
+    if (n < 2)
+{
+        printf("There should be at least 2 numbers.\n");
+        return 1;  
+    }
+    for (i = 0; i < n; i++)
+{
+        printf("Enter number %d: ", i + 1);
+        scanf("%d", &num);
+        if (num > max) {
+            secondMax = max;  
+            max = num;        
+        } else if (num > secondMax && num != max) {
+            secondMax = num;  
+        }
+    }
+    if (secondMax == -2147483648) {
+        printf("There is no second maximum number.\n");
+    } else {
+        printf("Maximum number: %d\n", max);
+        printf("Second maximum number: %d\n", secondMax);
+    }
+
+    return 0;
+}
