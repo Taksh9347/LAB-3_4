@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main()
+{
+	int i,N,Even=0,Odd=0;
+	printf("Enter a number N \n");
+	scanf("%d",&N);
+	
+	for(i=1;i<=N;i++)
+	{
+		if(i%2==0)
+		{
+			Even+=i;
+		}
+		else
+		{
+			Odd+=i;
+		}
+	}
+	printf("Sum of even numbers b/w 1 to N is %d\n",Even);
+	printf("Sum of odd numbers b/w 1 to N is %d\n",Odd);
+	
+	return 0;
+}
