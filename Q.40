@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+	int n;
+	printf("Enter numbers\n");
+	int sum=0;
+	while(n>0){
+		scanf("%d",&n);
+		sum+=n;
+	}
+	printf("Sum of positive numbers is %d",sum);
+}
