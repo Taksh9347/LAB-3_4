@@ -9,6 +9,4 @@ int main()
 		printf("%d,",i*2);
 	}
 	return 0;
-	
-	
 }
